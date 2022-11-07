@@ -60,3 +60,14 @@ p > strong {
     text-decoration-color:var(--primary-pink); 
     font-style: italic;
 }
+
+iframe {
+    border-color: var(--primary-pink);
+    border-radius: 27.21px;
+}
+
+main > span {
+    font-size: calc(var(--size-span-alt) - 3px);
+    color: white;
+    width: 100%;
+}
