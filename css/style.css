@@ -18,7 +18,8 @@
     padding: 0;
     background-color: var(--bg-all);
     font-family: "Inter", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-    font-size: var(--size-title-a1);
+    font-size: var(--size-span-alt);
+    color: white;
 }
 
 nav {
@@ -30,6 +31,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 90;
 }
 
 main {
@@ -37,27 +40,54 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+    position: relative;
+    z-index: 40;
 }
 
 header > h1 {
     color: white;
     text-align: center;
+    background-color: transparent;
+
 }
 
 h1 > span {
     color: var(--primary-pink);
+    /* background-color: transparent; */
+    background-color: transparent;
+    
+
 }
 
 header > p, strong {
     text-align: center;
     font-size: var(--size-span-alt);
     color: white;
+    background-color: transparent;
+
 }
 
 header {
     margin-top: var(--size-spacement);
     margin-bottom: calc(var(--size-spacement) + 10px);
+    position: relative;
+    z-index: 30;
+    margin-top: -5rem;
+    background-color: transparent;
+
+}
+
+.blow-blur-effect {
+    height: 15rem;
+    width: 30rem;
+    border-radius: 100rem;
+    background-color: var(--primary-pink);
+    filter:blur(15rem);
+    margin-top: -10rem;
+    margin-right: 1.5rem;
+    position: relative;
+    z-index: 20;
+
 }
 
 p > strong {
@@ -66,6 +96,8 @@ p > strong {
     text-decoration-thickness: 0.25rem;
     text-decoration-color:var(--primary-pink); 
     font-style: italic;
+    background-color: transparent;
+
 }
 
 iframe {
@@ -139,6 +171,12 @@ body {
     gap: 1rem;
     transition: .2s ease-in-out all;
     opacity: 0.3;
+    background-color: transparent;
+}
+
+
+.purchase-conditions--both > span, img {
+    background-color: transparent;
 }
 
 .purchase-conditions--both:hover {
@@ -154,7 +192,7 @@ body {
 }
 
 .purchase-conditions--describe{
-    font-size: calc(var(--size-span-alt));
+    font-size: var(--size-span-alt);
     line-height: 2.5rem;
 }
 
@@ -163,3 +201,15 @@ hr {
     height: 0.0625rem;
     background-color: var(--primary-pink); /* Modern Browsers */
 }
+
+#purchase-information {
+    list-style: none;
+
+}
+
+#purchase-information > li {
+    display: inline;
+}
+
+
+
