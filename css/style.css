@@ -2,10 +2,12 @@
     font-size: 16px;
     --bg-nav: #05040B;
     --bg-all: #090712;
+    --bg-section: #0D0A1A;
     --primary-pink: #FF385C;
     --size-title-a1: 4.27rem;
     --size-span-alt: 1.58rem;
     --size-spacement: 3.75rem;
+    --size-letter-3597: 2.24rem
 }
 
 ::selection {
@@ -13,20 +15,28 @@
   color: white;
 }
 
+img{
+    max-width: 100%; 
+    height: auto;
+}
+
 * {
     margin: 0 auto;
     padding: 0;
-    background-color: var(--bg-all);
     font-family: "Inter", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-    font-size: var(--size-span-alt);
+    /* font-size: var(--size-span-alt); */
     color: white;
 }
 
+body {
+    background-color: var(--bg-all);
+    height: 1000px;
+}
+
 nav {
-    height: 5.375rem ;
-    border-bottom: var(--primary-pink);
-    border-style: solid;
-    border-width: 1px;
+    height: 4rem ;
+    min-width: 100vw;
+    border-bottom: 1px solid var(--primary-pink);
     background-color: var(--bg-nav);
     display: flex;
     align-items: center;
@@ -36,7 +46,7 @@ nav {
 }
 
 main {
-    width: 62.24rem;
+    max-width: 62.24rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,24 +57,18 @@ main {
 header > h1 {
     color: white;
     text-align: center;
-    background-color: transparent;
+    font-size: var(--size-title-a1);
 
 }
 
 h1 > span {
-    color: var(--primary-pink);
-    /* background-color: transparent; */
-    background-color: transparent;
-    
-
+    color: var(--primary-pink);  
 }
 
 header > p, strong {
     text-align: center;
     font-size: var(--size-span-alt);
     color: white;
-    background-color: transparent;
-
 }
 
 header {
@@ -73,7 +77,6 @@ header {
     position: relative;
     z-index: 30;
     margin-top: -5rem;
-    background-color: transparent;
 
 }
 
@@ -90,13 +93,12 @@ header {
 
 }
 
-p > strong {
+header > p > strong {
     text-decoration: underline;
     text-underline-offset: 1.25rem;
     text-decoration-thickness: 0.25rem;
     text-decoration-color:var(--primary-pink); 
     font-style: italic;
-    background-color: transparent;
 
 }
 
@@ -157,26 +159,21 @@ body {
 
 .purchase-conditions {
     display: flex;
-    width: 37rem;
-    gap: 3rem;
+    width: 47rem;
+    row-gap: 4rem;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
+    /* background-color: yellow; */
 }
 
 .purchase-conditions--both {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     gap: 1rem;
     transition: .2s ease-in-out all;
     opacity: 0.3;
-    background-color: transparent;
-}
-
-
-.purchase-conditions--both > span, img {
-    background-color: transparent;
+    /* width: 80%;KC */
 }
 
 .purchase-conditions--both:hover {
@@ -204,12 +201,110 @@ hr {
 
 #purchase-information {
     list-style: none;
-
+    display: flex;
+    padding: 4rem;
+    background-color: var(--bg-section);
+    border-bottom: 1px solid var(--primary-pink);
 }
 
-#purchase-information > li {
+.purchase-information--item {
+    width: 20rem;
+}
+
+.purchase-information--item > div {
+    display: inline-flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 0.6rem;
+}
+
+.purchase-information--item > div > img {
+    width: 1.9rem;
+}
+
+#drone-na-pratica {
+    font-size: 1.1rem;
+}
+
+.purchase-information--item > div > strong {
+    font-size: 1.6rem;
+}
+
+.modules {
+    margin: 3rem auto;
+}
+
+.modules-content {
+    /* border: 1px solid aqua; */
+    box-sizing: border-box;
+    min-width: 30.1rem;
+    max-width: 57rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+/* 
+.modules-content > img, h2 {
+    display: block;
+} */
+
+.modules-content > img {
+    width: 4rem;
+    margin-bottom: 2rem;
+
+    /* display: inline; */
+}
+
+.modules-content > h2 {
+    width: 35rem;
+    font-size: var(--size-title-a1);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.modules-content > h2 > span {
+    color: var(--primary-pink);
+}
+
+.modules-content__courses {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    padding-inline: 2rem ;
+    padding-block: 1rem ;
+    gap: 2rem;
+}
+
+.modules-content__courses__module {
+    border: 1px solid var(--primary-pink);
+    padding: 1.5rem;
+    max-width: 23rem;
+    min-width: 12rem;
+    width: 13rem;
+    border-radius: 0.4rem;
+    transition: all .2s ease-in;
+}
+
+.modules-content__courses__module:hover {
+    transform: scale(1.03);
+}
+
+
+.modules-content__courses__module > h1 {
     display: inline;
+    font-size: 2rem;
+    text-align: ;
 }
+
+.modules-content__courses__module > img {
+    margin-left: 0.5rem;
+}
+
+
+
+
+
 
 
 
