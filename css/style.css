@@ -243,10 +243,11 @@ hr {
     display: flex;
     flex-direction: column;
 }
-/* 
-.modules-content > img, h2 {
-    display: block;
-} */
+
+.modules-content > button {
+    margin-top: 4rem;
+    margin-bottom: 2.4rem;
+}
 
 .modules-content > img {
     width: 4rem;
@@ -290,21 +291,32 @@ hr {
     transform: scale(1.03);
 }
 
-
-.modules-content__courses__module > h1 {
-    display: inline;
-    font-size: 2rem;
-    text-align: ;
+.modules-content__courses__module > div {
+    display: flex;
+    justify-content: left;
+    padding-bottom: 1rem;
 }
 
-.modules-content__courses__module > img {
+
+.modules-content__courses__module > div > h1 {
+    display: inline;
+    font-size: 2rem;
+}
+
+.modules-content__courses__module > div >  img {
+    width: 2.4rem;
+}
+
+.modules-content__courses__module > p  {
     margin-left: 0.5rem;
 }
 
+.modules-content__courses__module > ul {
+    margin-left: 1.5rem;
+    /* column-count: 2; */
+    margin-top: 1.5rem;
+}
 
-
-
-
-
-
-
+.modules-content > .modules-content__courses-for {
+    
+}
