@@ -466,14 +466,14 @@ hr {
         justify-items: center;
         align-items: center;
         max-width: 100%;
-        width: 70%;
+        /* width: 70%; */
     }
 
     .purchase-information--item {
         width: 70%;
     }
 
-    .modules-content__courses, .modules-content__courses-for, .modules-content {
+    .modules-content__courses, .modules-content__courses-for, .modules-content, .professora-info__descricao {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -497,9 +497,28 @@ hr {
     #texto-explicativo {
         width: 80%;
     }
-
-    /* #explicacao > span {
+/* 
+    .modules-content--professora{
         width: 80%;
     } */
+
+    #professora-info {
+        text-align: center;
+        /* width: 100%; */
+        padding: 3rem ;
+        
+    }
+
+    #historia-fran {
+        text-align: center;
+    }
+
+    #historia-fran > h2 {
+        margin-top: -3rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        font-size: 2.6rem;
+    }
+
 
 }
