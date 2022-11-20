@@ -466,11 +466,11 @@ hr {
         justify-items: center;
         align-items: center;
         max-width: 100%;
-        min-width: 70;
+        width: 70%;
     }
 
     .purchase-information--item {
-        max-width: 70%;
+        width: 70%;
     }
 
     .modules-content__courses, .modules-content__courses-for, .modules-content {
@@ -490,10 +490,16 @@ hr {
 
     #explicacao {
         width: 80%;
+        font-size: 2rem;
+        /* margin-top: -1rem; */
     }
 
-    #explicacao > span {
+    #texto-explicativo {
         width: 80%;
     }
+
+    /* #explicacao > span {
+        width: 80%;
+    } */
 
 }
