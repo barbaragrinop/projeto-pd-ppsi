@@ -1,5 +1,5 @@
 :root {
-    font-size: 16px;
+    font-size: 100%;
     --bg-nav: #05040B;
     --bg-all: #090712;
     --bg-section: #0D0A1A;
@@ -417,17 +417,17 @@ hr {
 }
 
 @media (min-width: 375px ) and (max-width: 700px){
-    body {
-        /* background-color: yellow; */
+    :root {
+        font-size: 75%;
     }
     iframe {
-        max-width: 100%; 
+        max-width: 80%; 
         min-height: 2rem; 
         margin: 1rem;
     }
 
     header {
-        background: rgb(103, 69, 69);
+        /* background: rgb(103, 69, 69); */
     }
 
     header > p {
