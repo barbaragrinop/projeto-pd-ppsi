@@ -78,7 +78,6 @@ header {
     position: relative;
     z-index: 30;
     margin-top: -5rem;
-
 }
 
 .blow-blur-effect {
@@ -390,6 +389,48 @@ hr {
     color: var(--primary-pink);
 }
 
-#professora-info {
+.professora-info__descricao {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
 
+#historia-fran {
+    box-sizing: border-box;
+    width: 65%;
+}
+
+#historia-fran > h2{
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    text-align: start;
+}
+
+#historia-fran > p{
+    padding-bottom: 1rem;
+}
+
+#foto-fran {
+    margin-top: 4rem;
+    background: rgb(167, 107, 107);
+    width: 300px;
+    height: 300px;
+}
+
+@media (min-width: 375px ) and (max-width: 700px){
+    body {
+        /* background-color: yellow; */
+    }
+    iframe {
+        max-width: 100%; 
+        min-height: 2rem; 
+        margin: 1rem;
+    }
+
+    header {
+        background: rgb(103, 69, 69);
+    }
+
+    header > p {
+        
+    }
 }
