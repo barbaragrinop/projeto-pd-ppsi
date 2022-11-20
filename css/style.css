@@ -428,7 +428,7 @@ hr {
         margin: 0 auto;
     }
     iframe {
-        max-width: 80%; 
+        max-width: 100%; 
         height: 15rem; 
         margin: 1rem;
     }
@@ -523,3 +523,30 @@ hr {
 
 
 }
+
+@media (orientation: landscape) and (min-width: 200px ) and (max-width: 844px) {
+    nav {
+        flex-direction: 100vw;
+    }
+
+    iframe {
+        max-width: 80%; 
+        height: 20rem; 
+        margin: 1rem;
+    }
+
+    .purchase-information--item {
+        padding: 1rem;
+    }
+
+    #explicacao {
+        width: 80%;
+    }
+
+    #texto-explicativo {
+        width: 80%;
+    }
+
+
+
+  }
