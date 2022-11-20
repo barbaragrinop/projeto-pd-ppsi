@@ -419,7 +419,7 @@ hr {
     height: 300px;
 }
 
-@media (min-width: 375px ) and (max-width: 700px){
+@media (min-width: 353px ) and (max-width: 844px){
     :root {
         font-size: 75%;
     }
@@ -427,8 +427,9 @@ hr {
     body {
         margin: 0 auto;
     }
+
     iframe {
-        max-width: 100%; 
+        max-width: 80%; 
         height: 15rem; 
         margin: 1rem;
     }
@@ -502,6 +503,9 @@ hr {
     .modules-content--professora{
         width: 80%;
     } */
+    #professora {
+        width: 80%;
+    }
 
     #professora-info {
         text-align: center;
@@ -524,7 +528,7 @@ hr {
 
 }
 
-@media (orientation: landscape) and (min-width: 200px ) and (max-width: 844px) {
+@media (orientation: landscape) {
     nav {
         flex-direction: 100vw;
     }
