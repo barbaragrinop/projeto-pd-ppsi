@@ -46,6 +46,10 @@ nav {
     z-index: 90;
 }
 
+hr {
+    width: 100%;
+}
+
 main {
     max-width: 62.24rem;
     display: flex;
@@ -461,7 +465,25 @@ hr {
         row-gap: 4rem;
         justify-items: center;
         align-items: center;
-        width: 70%;
+        max-width: 100%;
+        min-width: 70;
+    }
+
+    .purchase-information--item {
+        max-width: 70%;
+    }
+
+    .modules-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modules-content__courses {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
     }
 
 }
