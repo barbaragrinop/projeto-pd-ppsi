@@ -488,4 +488,12 @@ hr {
         margin-right: 0.2rem;
     }
 
+    #explicacao {
+        width: 80%;
+    }
+
+    #explicacao > span {
+        width: 80%;
+    }
+
 }
