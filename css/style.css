@@ -23,6 +23,7 @@ img{
 * {
     margin: 0 auto;
     padding: 0;
+    margin: 0;
     font-family: "Inter", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
     /* font-size: var(--size-span-alt); */
     color: white;
@@ -420,17 +421,18 @@ hr {
     :root {
         font-size: 75%;
     }
+
+    body {
+        margin: 0 auto;
+    }
     iframe {
         max-width: 80%; 
-        min-height: 2rem; 
+        height: 15rem; 
         margin: 1rem;
     }
 
-    header {
+    header > h1 {
         /* background: rgb(103, 69, 69); */
-    }
-
-    header > p {
-        
+        margin-bottom: 3rem;
     }
 }
