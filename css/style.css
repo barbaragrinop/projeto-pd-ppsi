@@ -4,7 +4,7 @@
     --bg-all: #090712;
     --bg-section: #0D0A1A;
     --primary-pink: #FF385C;
-    --size-title-a1: 4.27rem;
+    --size-title-a1: 3.7rem;
     --size-span-alt: 1.58rem;
     --size-spacement: 3.75rem;
     --size-letter-3597: 2.24rem
@@ -257,7 +257,7 @@ hr {
 }
 
 .modules-content > h2 {
-    width: 35rem;
+    width: 100%;
     font-size: var(--size-title-a1);
     text-align: center;
     margin-bottom: 2rem;
@@ -297,8 +297,7 @@ hr {
     padding-bottom: 1rem;
 }
 
-
-.modules-content__courses__module > div > h1 {
+.modules-content__courses__module > div > h2 {
     display: inline;
     font-size: 2rem;
 }
@@ -313,10 +312,48 @@ hr {
 
 .modules-content__courses__module > ul {
     margin-left: 1.5rem;
-    /* column-count: 2; */
     margin-top: 1.5rem;
 }
 
-.modules-content > .modules-content__courses-for {
-    
+.modules-content__courses-for {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+
+    justify-content: start;
+    list-style: none;
+}
+
+.modules-content__courses-for > li {
+    padding: 2rem;
+}
+
+#course-for-list {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+}
+
+#course-for-list > img {
+    width: 3rem;
+}
+
+#course-for-list > div > h2 {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+}
+
+#course-for-list > div > span {
+    font-size: 1rem;
+}
+
+#explicacao {
+    margin-top: 4rem;
+}
+
+#texto-explicativo {
+    text-align: center;
+}
+
+#texto-explicativo > span {
+    font-weight: bolder;
 }
