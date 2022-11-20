@@ -72,6 +72,7 @@ header > p, strong {
 }
 
 header {
+    box-sizing: border-box;
     margin-top: var(--size-spacement);
     margin-bottom: calc(var(--size-spacement) + 10px);
     position: relative;
@@ -90,7 +91,6 @@ header {
     margin-right: 1.5rem;
     position: relative;
     z-index: 20;
-
 }
 
 header > p > strong {
@@ -99,7 +99,6 @@ header > p > strong {
     text-decoration-thickness: 0.25rem;
     text-decoration-color:var(--primary-pink); 
     font-style: italic;
-
 }
 
 iframe {
@@ -352,8 +351,45 @@ hr {
 
 #texto-explicativo {
     text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
 }
 
 #texto-explicativo > span {
     font-weight: bolder;
+}
+
+#professora {
+    margin-top: 1rem;
+}
+
+#professora-info {
+    font-size: var(--size-span-alt);
+    text-align: center;
+}
+
+.modules-content--professora {
+    /* border: 1px solid aqua; */
+    box-sizing: border-box;
+    min-width: 30.1rem;
+    max-width: 46rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.modules-content--professora > h2 {
+    width: 100%;
+    font-size: var(--size-title-a1);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.modules-content--professora > h2 > span {
+    color: var(--primary-pink);
+}
+
+#professora-info {
+
 }
