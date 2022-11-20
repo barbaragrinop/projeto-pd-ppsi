@@ -431,8 +431,37 @@ hr {
         margin: 1rem;
     }
 
+    header {
+        box-sizing: border-box;
+        width: 90%;
+    }
+
     header > h1 {
         /* background: rgb(103, 69, 69); */
         margin-bottom: 3rem;
     }
+
+    .price {
+        max-width: 80%;
+    }
+
+    .purchase-conditions {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .purchase-conditions--both {
+        opacity: 1;
+    }
+
+    #purchase-information {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4rem;
+        justify-items: center;
+        align-items: center;
+        width: 70%;
+    }
+
 }
