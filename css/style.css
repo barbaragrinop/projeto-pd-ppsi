@@ -36,7 +36,7 @@ body {
 
 nav {
     height: 4rem ;
-    min-width: 100vw;
+    min-width: 100%;
     border-bottom: 1px solid var(--primary-pink);
     background-color: var(--bg-nav);
     display: flex;
@@ -473,17 +473,19 @@ hr {
         max-width: 70%;
     }
 
-    .modules-content {
+    .modules-content__courses, .modules-content__courses-for, .modules-content {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .modules-content__courses {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .modules-content__courses-for {
+        width: 80%;
+    }
 
+    #course-for-list > img {
+        margin-top: 0.2rem;
+        margin-right: 0.2rem;
     }
 
 }
