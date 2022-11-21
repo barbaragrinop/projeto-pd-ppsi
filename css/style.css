@@ -447,6 +447,9 @@ hr {
     opacity: 1;
 } 
 
+.nav-items > li:active {
+    opacity: 1;
+}
 
 #hide-items-nav {
     display: none;
