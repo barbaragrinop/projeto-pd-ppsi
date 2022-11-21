@@ -41,7 +41,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 90;
 }
 
@@ -107,6 +108,7 @@ header > p > strong {
 iframe {
     border-color: var(--primary-pink);
     border-radius: 1.70rem;
+    height: 30rem;
 }
 
 main > div {
@@ -272,10 +274,10 @@ hr {
 .modules-content__courses {
     box-sizing: border-box;
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
     padding-inline: 2rem ;
     padding-block: 1rem ;
-    gap: 2rem;
 }
 
 .modules-content__courses__module {
@@ -284,6 +286,7 @@ hr {
     max-width: 23rem;
     min-width: 12rem;
     width: 13rem;
+    margin-bottom: 1rem;
     border-radius: 0.4rem;
     transition: all .2s ease-in;
 }
@@ -419,6 +422,9 @@ hr {
     height: 300px;
 }
 
+
+/* INICIA MOBILE */
+
 @media (min-width: 353px ) and (max-width: 844px){
     :root {
         font-size: 75%;
@@ -535,7 +541,7 @@ hr {
 
     iframe {
         max-width: 80%; 
-        height: 20rem; 
+        height: 30rem; 
         margin: 1rem;
     }
 
@@ -553,4 +559,36 @@ hr {
 
 
 
-  }
+}
+
+@media (min-width: 820px ) and (max-width: 1180px){
+    iframe {
+        max-width: 80%; 
+        height: 28rem; 
+        margin: 1rem;
+    }
+    .purchase-conditions {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .purchase-information--item {
+        text-align: center;
+    }
+
+    .modules-content__courses {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: 3.125rem;
+    }
+
+    .modules-content__courses__module {
+        height: 20rem;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+}
+
+/* FIM MOBILE */
+
+
