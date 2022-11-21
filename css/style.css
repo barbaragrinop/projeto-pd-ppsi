@@ -452,6 +452,10 @@ hr {
     display: none;
 }
 
+.open {
+    opacity: 1;
+}
+
 
 /* INICIA MOBILE */
 
@@ -459,6 +463,8 @@ hr {
     :root {
         font-size: 75%;
     }
+
+
 
     body {
         margin: 0 auto;
@@ -561,6 +567,9 @@ hr {
         font-size: 2.6rem;
     }
 
+    #items-nav {
+        display: none;
+    }
 
 }
 
@@ -591,7 +600,11 @@ hr {
 
 }
 
-@media (min-width: 820px ) and (max-width: 1180px){
+@media (min-width: 844px ) {
+    .menu-btn, .menu-btn__burger  {
+        display: none;
+    }
+
     iframe {
         max-width: 80%; 
         height: 28rem; 
