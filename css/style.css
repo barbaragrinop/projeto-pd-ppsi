@@ -439,8 +439,15 @@ hr {
 
 .nav-items > li > a {
     text-decoration: none;
-
+    opacity: 0.3;
+    transition: 0.2s linear;
 } 
+
+.nav-items > li > a:hover {
+    text-decoration: none;
+    opacity: 1;
+} 
+
 
 #hide-items-nav {
     display: none;
