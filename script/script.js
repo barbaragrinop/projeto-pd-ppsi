@@ -1,4 +1,5 @@
 const itemsnav = document.querySelector("#items-nav")
+const navbarLogo = document.getElementById('logo');
 
 window.addEventListener("scroll", () => {
     let lastScrollY = window.scrollY
@@ -9,6 +10,7 @@ window.addEventListener("scroll", () => {
 
     } else if(lastScrollY > 100) {
         itemsnav.classList.add("nav-items")
+        navbarLogo.classList.remove('remove-all');
         itemsnav.classList.remove("remove-all")
 
     }
