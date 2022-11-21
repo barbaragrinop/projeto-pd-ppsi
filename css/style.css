@@ -10,6 +10,11 @@
     --size-letter-3597: 2.24rem
 }
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 ::selection {
   background-color: var(--primary-pink);
   color: white;
@@ -420,6 +425,25 @@ hr {
     background: rgb(167, 107, 107);
     width: 300px;
     height: 300px;
+}
+
+.remove-all {
+    display: none;
+}
+
+.nav-items{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-items > li > a {
+    text-decoration: none;
+
+} 
+
+#hide-items-nav {
+    display: none;
 }
 
 

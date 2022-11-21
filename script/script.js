@@ -1,19 +1,16 @@
-const sections = document.querySelectorAll('section')
-const bubble = document.querySelector('.bubble')
+const itemsnav = document.querySelector("#items-nav")
 
-const options = {
-    threshold: 0.7
-}
+window.addEventListener("scroll", () => {
+    let lastScrollY = window.scrollY
 
-const navCheck = (entries) => {
-    console.log('entries', entries)
-    entries.forEach(entry => {
-        console.log(entry)
-    });
-}
+    if(lastScrollY <= 100){
+        itemsnav.classList.add("remove-all")
+        itemsnav.classList.remove("nav-items")
 
-let observer = new IntersectionObserver(navCheck, options)
+    } else if(lastScrollY > 100) {
+        itemsnav.classList.add("nav-items")
+        itemsnav.classList.remove("remove-all")
 
-
-
-sections.forEach(section => observer.observe(section))
+    }
+    lastScrollY = window.scrollY
+})

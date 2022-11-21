@@ -10,21 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
-    <script src="script/script.js"></script>
     <title> Franschultz</title>
 </head>
 <body style="height: 9999px;">
-    <nav role="navigation" id="navbar">
+    <nav role="navigation" id="navbar" class="navbar-menu">
         <img src="images/logo-nav.svg" alt="Logo da navbar referente a Francshulltz">
-        <ul id="options">
-            <li > <a href="">teste</a></li>
-            <li ><a href="">teste</a> </li>
-            <li ><a href="">teste</a></li>
-            <li ><a href="">teste</a></li>
-        </div>
+        <ul id="items-nav">
+            <li > <a href="#conheca">Conheça</a></li>
+            <li ><a href="#modulos">Curso e Módulos</a> </li>
+            <li ><a href="#publicoalvo">Público Alvo</a></li>
+            <li ><a href="#prof">Professora</a></li>
+        </ul>
     </nav>
     <div id="container-all">
-        <main >
+        <main id="conheca">
             <div class="blow-blur-effect"></div>
             <header>
                 <h1>Conheça nosso <br>curso de <span>Drone</span></h1>
@@ -78,10 +77,10 @@
                 <p>Seu login para treinamento tudo <strong id="drone-na-pratica">DroneNaPratica</strong>, será enviado ao seu e-mail logo após o processamento do pagamento.</p>
             </li> 
         </ul>
-        <section class="modules">
+        <section class="modules" id="modulos">
             <div class="modules-content">
                 <img src="images/drone.svg" alt="Ícone com o fundo circular de cor rosa e ao centro, um desenho simbolizando um drone">
-                <h2>Módulos que terão no <span>curso</span></h2>
+                <h2 >Módulos que terão no <span>curso</span></h2>
                 <div class="modules-content__courses">
                     <article class="modules-content__courses__module">
                         <div>
@@ -207,14 +206,14 @@
                         </ul>
                     </article>
                 </div>
-                <button class="btn-highlight--pink">Garantir minha vaga</button>
+                <button class="btn-highlight--pink" id="publicoalvo">Garantir minha vaga</button>
             </div>
         </section>
-        <section class="modules">
+        <section class="modules" >
             <!-- <img  id="icon-pink-rectangle" src='/images/rectangle.svg' alt="Ícone de um quadrado cor de rosa"> -->
             
             <div class="modules-content">
-                <h2>Para <span>quem</span> é o curso?</h2>
+                <h2 >Para <span>quem</span> é o curso?</h2>
                 <ul class="modules-content__courses-for">
                     <li>
                         <div id="course-for-list">
@@ -331,7 +330,7 @@
             </li> 
         </ul>
 
-        <section class="modules">
+        <section class="modules"  id="prof" >
             <div class="modules-content--professora">
                 <h2 id="professora">Sua <span>professora</span></h2>
                 <p id="professora-info">Veja quem vai te guiar até a maestria na pilotagem, captação e edição de vídeos feitos com o drone.</p>
@@ -348,5 +347,6 @@
             </div>
         </section>
     </div>
+    <script src="script/script.js"></script>
 </body>
 </html>
