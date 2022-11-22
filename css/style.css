@@ -523,11 +523,15 @@ hr {
     cursor: pointer;
 }
 
+footer {
+    min-width: 100vw;
+    
+}
 
 
 /* INICIA MOBILE */
 
-@media (min-width: 353px ) and (max-width: 955px){
+@media (min-width: 353px ) and (max-width: 830px){
     :root {
         font-size: 75%;
     }
@@ -666,7 +670,7 @@ hr {
 
 }
 
-@media (min-width: 956px) {
+@media (min-width: 931px) {
     .menu-btn, .menu-btn__burger {
         display: none;
     }
@@ -688,14 +692,15 @@ hr {
 
     .modules-content__courses {
         display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-gap: 3.125rem;
+        grid-template-columns: repeat(3, 33%);
+        /* grid-gap: 3.125rem;   */
     }
 
     .modules-content__courses__module {
         height: 20rem;
         overflow: hidden;
-        overflow-y: scroll;
+        overflow-y: auto;
+        /* overflow */
     }
 }
 
