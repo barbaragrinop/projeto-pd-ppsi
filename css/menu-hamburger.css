@@ -3,7 +3,7 @@
 }
 
 @media (min-width: 100px) and (max-width: 873px){ 
-    .menu-btn {
+    /* .menu-btn {
         position: relative;
         display: flex;
         justify-content: center;
@@ -12,7 +12,6 @@
         height: rem;
         cursor: pointer;
         transition: all .5s ease-in-out;
-        /* border: 3px solid #fff; */
     }
     
     .menu-btn__burger {
@@ -46,10 +45,11 @@
     .menu-btn__burger::after{
         transform: translateY(1rem);   
     }
-    
+     */
+
     /* animation */
     
-    .menu-btn.open .menu-btn__burger {
+    /* .menu-btn.open .menu-btn__burger {
         transform: translateX(-3.125rem);   
         background: transparent;
         box-shadow: none;
@@ -65,7 +65,7 @@
     .menu-btn.open .menu-btn__burger::after {
         transform: rotate(-45deg) translate(2.1rem, 2.1rem);
         cursor: pointer;
-    }
+    } */
 }
 
 

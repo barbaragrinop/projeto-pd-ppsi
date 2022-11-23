@@ -34,6 +34,7 @@ img{
 }
 
 body {
+    position: relative;
     background-color: var(--bg-all);
 }
 
@@ -87,7 +88,7 @@ header > p, strong {
 header {
     box-sizing: border-box;
     margin-top: var(--size-spacement);
-    margin-bottom: calc(var(--size-spacement) + 10px);
+    margin-bottom: calc(var(--size-spacement) + .625rem);
     position: relative;
     z-index: 30;
     margin-top: -5rem;
@@ -108,19 +109,25 @@ header {
 header > p > strong {
     text-decoration: underline;
     text-underline-offset: 1.25rem;
-    text-decoration-thickness: 0.25rem;
+    text-decoration-thickness: .25rem;
     text-decoration-color:var(--primary-pink);
     font-style: italic;
 }
 
 iframe {
     border-color: var(--primary-pink);
-    border-radius: 1.70rem;
+    border-radius: 1.7rem;
+    height: 30rem;
+}
+
+blockquote {
+    border-color: var(--primary-pink);
+    border-radius: 1.7rem;
     height: 30rem;
 }
 
 main > div {
-    font-size: calc(var(--size-span-alt) - 0.16rem);
+    font-size: calc(var(--size-span-alt) - .16rem);
     color: white;
     width: 100%;
     text-align: center;
@@ -139,20 +146,20 @@ main > div {
 
 .btn-highlight--pink {
     padding: 1.25rem 3.75rem;
-    font-size: calc(var(--size-span-alt) - 0.5rem);
+    font-size: calc(var(--size-span-alt) - .5rem);
     color: white;
     border: none;
     background-color: var(--primary-pink);
     text-transform: uppercase;
     font-weight: 500;
-    box-shadow: 0px 0px 2.5rem var(--primary-pink);
-    border-radius: 0.59rem;
+    box-shadow: 0 0 2.5rem var(--primary-pink);
+    border-radius: .59rem;
     cursor: pointer;
     transition: all .2s;
 }
 
 .btn-highlight--pink:hover {
-    box-shadow: 0px 0px 25rem var(--primary-pink);
+    box-shadow: 0 0 25rem var(--primary-pink);
     transform: scale(1.03);
 
 }
@@ -165,9 +172,6 @@ main > div {
     transform: scale(0.99);
 }
 
-body {
-    margin-bottom: 6.25rem;
-}
 
 .purchase-conditions {
     display: flex;
@@ -190,7 +194,7 @@ body {
 .purchase-conditions--both:hover {
     transform: scale(1.03);
     opacity: 1;
-    /* text-shadow: 0px 0px 0.5rem white; */
+    /* text-shadow: 0px 0px .5rem white; */
 
 }
 
@@ -206,7 +210,7 @@ body {
 
 hr {
     border: none;
-    height: 0.0625rem;
+    height: .0625rem;
     background-color: var(--primary-pink); /* Modern Browsers */
 }
 
@@ -226,7 +230,7 @@ hr {
     display: inline-flex;
     gap: 1rem;
     align-items: center;
-    margin-bottom: 0.6rem;
+    margin-bottom: .6rem;
 }
 
 .purchase-information--item > div > img {
@@ -295,7 +299,7 @@ hr {
     min-width: 12rem;
     width: 13rem;
     margin-bottom: 1rem;
-    border-radius: 0.4rem;
+    border-radius: .4rem;
     transition: all .2s ease-in;
 }
 
@@ -319,7 +323,7 @@ hr {
 }
 
 .modules-content__courses__module > p  {
-    margin-left: 0.5rem;
+    margin-left: .5rem;
 }
 
 .modules-content__courses__module > ul {
@@ -339,15 +343,35 @@ hr {
     padding: 2rem;
 }
 
+#quadro-recebidos {
+    box-sizing: border-box;
+    width: 70%;
+    margin-top: 4rem;
+    border: 1px solid var(--primary-pink);
+    padding: 3rem 3rem;
+    border-radius: .4rem;
+    background-color: var(--bg-section);
+}
+
+#quadro-recebidos__lista {
+    list-style: none;
+}
+
+#quadro-recebidos__lista > li {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#ponto-de-atencao {
+    font-weight: 900;
+}
+
 #course-for-list {
     display: flex;
     align-items: flex-start;
-    gap: 0.6rem;
+    gap: .6rem;
 }
-
-
-
-
 
 #course-for-list > img {
     width: 3rem;
@@ -355,7 +379,7 @@ hr {
 
 #course-for-list > div > h2 {
     font-size: 2rem;
-    margin-bottom: 0.3rem;
+    margin-bottom: .3rem;
 }
 
 #course-for-list > div > span {
@@ -383,6 +407,48 @@ hr {
 #professora-info {
     font-size: var(--size-span-alt);
     text-align: center;
+}
+
+.modules-content__referencia {
+    box-sizing: border-box;
+    min-width: 25.1rem;
+    max-width: 37rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.modules-content__referencia > h2 {
+    width: 100%;
+    font-size: var(--size-title-a1);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.modules-content__referencia > h2 > span {
+    color: var(--primary-pink);
+}
+
+#referencia-info {
+    font-size: var(--size-span-alt);
+    text-align: center;
+    width: 80%;
+    /* width: ; */
+}
+
+#referencia-info--bottom {
+    font-size: calc(var(--size-span-alt) - 0.4rem);
+    text-align: center;
+    width: 80%;
+    padding: 2rem;
+}
+
+#referencia-info--bottom > span {
+    color: var(--primary-pink);
+    font-weight: 500;
 }
 
 .modules-content--professora {
@@ -430,8 +496,8 @@ hr {
 #foto-fran {
     margin-top: 4rem;
     /* background: rgb(167, 107, 107); */
-    width: 300px;
-    height: 300px;
+    width: 18.75rem;
+    height: 18.75rem;
 }
 
 #foto-fran > img {
@@ -476,8 +542,12 @@ hr {
 
 
 footer {
-    min-width: 100vw;
-
+    background-color: #110E21;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 1px;
+    color: rgba(255, 255, 255, 0.319);
+    font-size: 0.8rem;
 }
 
 /* FEEDBACK */
@@ -523,14 +593,24 @@ footer {
     align-items: center;
     box-sizing: border-box;
     width: 100%;
-    margin: 3rem 0
+    margin: 3rem 0;
+    padding: 2rem;
 }
+
+
 
 #url-feedback > iframe {
     border-color: var(--primary-pink);
-    border-radius: 1.70rem;
+    border-radius: 1.7rem;
     height: 30rem;
 }
+
+#url-feedback > blockquote {
+    border-color: var(--primary-pink);
+    border-radius: 1.7rem;
+    height: 30rem;
+}
+
 
 #feedbacks-trabalho-fran {
     width: 80%;
@@ -539,15 +619,49 @@ footer {
 }
 
 .individual-feedback {
-    border-radius: 0.4rem;
+    border-radius: .4rem;
     border: 1px solid var(--primary-pink);
     padding: 1rem;
     height: 10rem;
-    margin: 0.4rem;
+    margin: .4rem;
     transition: .2s linear;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+
+#purchase-information__buy {
+    border-top: 1px solid var(--primary-pink);
+    border-bottom: 1px solid var(--primary-pink);
+    list-style: none;
+    display: flex;
+    padding: 3rem;
+    gap: 3rem;
+    background-color: var(--bg-section);
+    border-bottom: 1px solid var(--primary-pink);
+}
+
+#purchase-information__buy > img {
+    margin-right: 0;
+    width: 10rem;
+}
+
+#descricao-garantia {
+    width: 17rem;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+#descricao-garantia > h2 {
+    margin-left: 0;
+}
+
+#descricao-garantia > h2 > span {
+    color: var(--primary-pink);
 }
 
 
@@ -561,62 +675,50 @@ footer {
     text-align: right;
 }
 
+.iframe-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.price-bottom {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
 
+.price-bottom, .price-bottom > strong{
+    width: 80%;
+    text-align: center;
+}
 
+.price-bottom > strong:first-child {
+    font-style: italic;
+    text-decoration: line-through;
+}
 
+#middle-price {
+    color: var(--primary-pink);
+}
 
+footer {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 /* INICIA MOBILE */
 
 @media (min-width: 100px) and (max-width: 873px){
     :root {
         font-size: 75%;
+    }
+/* 
+    #post-fran-insta {
+        padding: 2rem;
+    } */
+
+    .iframe-top {
+        width: 90%;
+        /* margin-left: 1rem;
+        align-self: center; */
     }
 
     body {
@@ -634,6 +736,33 @@ footer {
         height: 15rem;
         margin: 1rem;
     }
+    
+    #purchase-information__buy > img {
+        margin: 0 auto;
+
+        width: 10rem;
+    }
+    
+    #descricao-garantia {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.4rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    #descricao-garantia > h2 {
+        /* margin-left: 0; */
+        text-align: center;
+        margin: 0 auto;
+
+    }
+    /* 
+    #descricao-garantia > h2 > span {
+        color: var(--primary-pink);
+    } */
 
     header {
         box-sizing: border-box;
@@ -676,7 +805,14 @@ footer {
         width: 70%;
     }
 
-    #feedbacks-trabalho-fran, .modules-content__courses, .modules-content__courses-for, .modules-content, .professora-info__descricao {
+    #purchase-information__buy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    #feedbacks-trabalho-fran,  .modules-content__courses, .modules-content__courses-for, .modules-content, .professora-info__descricao {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -684,8 +820,9 @@ footer {
 
     #feedbacks-trabalho-fran > .individual-feedback {
         width: 20rem;
-        height: 20rem;
+        height: auto;
         margin: 1.5rem;
+        
     }
     
 
@@ -722,9 +859,11 @@ footer {
         width: 80%;
     }
 
+   
+
     #course-for-list > img {
-        margin-top: 0.2rem;
-        margin-right: 0.2rem;
+        margin-top: .2rem;
+        margin-right: .2rem;
     }
 
     #explicacao {
@@ -785,6 +924,12 @@ footer {
         margin: 1rem;
     }
 
+    blockquote {
+        max-width: 80%;
+        height: 30rem;
+        margin: 1rem;
+    }
+
     .purchase-information--item {
         padding: 1rem;
     }
@@ -809,6 +954,14 @@ footer {
         margin: 1rem;
         border: 1px solid var(--primary-pink);
     }
+
+    blockquote {
+        max-width: 80%;
+        height: 28rem;
+        margin: 1rem;
+        border: 1px solid var(--primary-pink);
+    }
+
     .purchase-conditions {
         display: flex;
         flex-direction: row;
