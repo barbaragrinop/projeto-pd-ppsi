@@ -12,17 +12,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
-    <title>Franschultz</title>
+    <title>Franschultz - Curso de Drone</title>
+    <meta name="description" content="Essa página é unica e é feita para mostrar o trabalho da Fran, que é uma fotográfa e grava vídeos de casamento com seu drone. Aqui, ela oferece cursos sobre o assunto e mostra o seu trabalho">
 
 </head>
 <body>
-    <nav role="navigation" id="navbar" class="navbar-menu">
+    <nav id="navbar" class="navbar-menu"  aria-label="Barra de Navegação Principal">
+        <h2 class="sr-only" style="display:none;">Navegação</h2>
         <img id="logo" src="images/logo-nav.svg" alt="Logo da navbar referente a Francshulltz">
         <ul id="items-nav" class="remove-all">
-            <li class="li-from-nav" onclick="getUrl('modulos')"><a id="modulos-nav" class="nav-item-per-item" href="#modulos">Curso e Módulos</a> </li>
-            <li class="li-from-nav" onclick="getUrl('publicoalvo')"><a id="publicoalvo-nav"  class="nav-item-per-item" href="#publicoalvo">Público Alvo</a></li>
-            <li class="li-from-nav" onclick="getUrl('prof')"><a id="prof-nav" class="nav-item-per-item" href="#prof">Professora</a></li>
-            <li class="li-from-nav" onclick="getUrl('conheca')" ><a id="conheca-nav" class="nav-item-per-item" href="#conheca">Feedbacks</a></li>
+            <li class="li-from-nav" ><a id="modulos-nav" class="nav-item-per-item" href="#modulos">Curso e Módulos</a> </li>
+            <li class="li-from-nav" ><a id="publicoalvo-nav"  class="nav-item-per-item" href="#publicoalvo">Público Alvo</a></li>
+            <li class="li-from-nav" ><a id="prof-nav" class="nav-item-per-item" href="#prof">Professora</a></li>
+            <li class="li-from-nav" ><a id="conheca-nav" class="nav-item-per-item" href="#conheca">Feedbacks</a></li>
             
         </ul>
         <div class="menu-btn">
@@ -45,10 +47,11 @@
 
             </div>
 
-            <div class="price">De 
+            <div class="price">
+                <p>De 
                 <strong>R$797,00</strong> por 
                 <strong>12x de R$38,68</strong> ou 
-                <strong>R$397 à vista</strong>
+                <strong>R$397 à vista</strong></p>
             </div>
             <button class="btn-highlight--pink">Garantir minha vaga</button>
             <div class="purchase-conditions">
@@ -70,25 +73,25 @@
         <hr>
 
         <!-- GARANTIA -->
-        <ul id="purchase-information" class="ul-to-navigate">
-            <li class="purchase-information--item">
+        <ul id="purchase-information" class="ul-to-navigate" aria-label="Informações sobre a compra">
+            <li class="purchase-information--item" aria-labelledby="acesso-vitalicio-label">
                 <div>
-                    <strong>Acesso Vitalício</strong>
-                    <img src="/images/circle-checked.svg" alt="Ícone com uma flag de checked">
+                    <strong id="acesso-vitalicio-label">Acesso Vitalício</strong>
+                    <img src="/images/circle-checked.svg" alt="Ícone com uma bandeira com o simbolo de check" aria-describedby="acesso-vitalicio-descricao" title="Você terá acesso vitalício ao treinamento.">
                 </div>
-                <p>Assista quando e onde quiser, sem se preocupar com tempo.</p>
+                <p id="acesso-vitalicio-descricao">Assista quando e onde quiser, sem se preocupar com tempo.</p>
             </li>
-            <li class="purchase-information--item">
+            <li class="purchase-information--item" aria-labelledby="garantias-compra">
                 <div>
-                    <strong>7 Dias de garantia</strong>
-                    <img src="/images/calendar.svg" alt="Ícone de um calendário">
+                    <strong id="garantias-compra">7 Dias de garantia</strong>
+                    <img src="/images/calendar.svg" alt="Ícone de um calendário" aria-describedby="garantias-compra-descricao" title="Você poderá pedir 100% de devolução do seu dinheiro.">
                 </div>
-                <p>Você poderá pedir a devolução de 100% do seu dinheiro dentro desse prazo, caso não se identifique com o treinamento.</p>
+                <p >Você poderá pedir a devolução de 100% do seu dinheiro dentro desse prazo, caso não se identifique com o treinamento.</p>
             </li>
-            <li class="purchase-information--item">
+            <li class="purchase-information--item" aria-labelledby="login-treinamento">
                 <div>
-                    <strong>Acesso imediato</strong>
-                    <img src="/images/clock.svg" alt="Ícone de um relogio">
+                    <strong id="login-treinamento">Acesso imediato</strong>
+                    <img src="/images/clock.svg" alt="Ícone de um relogio" aria-describedby="login-treinamento-icone" title="Seu login será enviado por e-mail">
                 </div>
                 <p>Seu login para treinamento tudo <strong id="drone-na-pratica">DroneNaPratica</strong>, será enviado ao seu e-mail logo após o processamento do pagamento.</p>
             </li> 
@@ -477,8 +480,8 @@
     </div>
    
    
-    <script src="script/script.js"></script>
-    <script src="script/menu-burger.js"></script>
+    <!-- <script src="script/script.js"></script>
+    <script src="script/menu-burger.js"></script> -->
     <footer>
         Todos os direitos reservados a Fran Schultz © 2022
     </footer>

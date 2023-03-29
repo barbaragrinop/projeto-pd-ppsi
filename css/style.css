@@ -505,9 +505,9 @@ hr {
     border: 1px solid var(--primary-pink);
 }
 
-.remove-all {
+/* .remove-all {
     display: none;
-}
+} */
 
 .nav-items{
     list-style: none;
@@ -531,9 +531,9 @@ hr {
     text-decoration: none;
 }
 
-#hide-items-nav {
+/* #hide-items-nav {
     display: none;
-}
+} */
 
 .open {
     opacity: 1;
@@ -700,13 +700,10 @@ footer {
     color: var(--primary-pink);
 }
 
-footer {
-
-}
-
 /* INICIA MOBILE */
 
 @media (min-width: 100px) and (max-width: 873px){
+
     :root {
         font-size: 75%;
     }
@@ -714,6 +711,10 @@ footer {
     #post-fran-insta {
         padding: 2rem;
     } */
+
+    .remove-all {
+        display: none;
+    }
 
     .iframe-top {
         width: 90%;
@@ -947,7 +948,6 @@ footer {
 }
 
 @media (min-width: 874px) {
-
     iframe {
         max-width: 80%;
         height: 28rem;
